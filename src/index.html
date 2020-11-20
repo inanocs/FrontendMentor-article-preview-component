@@ -10,48 +10,76 @@
       sizes="32x32"
       href="./assets/img/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="js/scripts.js"></script>
   </head>
   <body>
     <main class="main">
-      <section class="main-img">
+      <section class="main__img-container">
         <img
           src="assets/img/drawers.jpg"
           alt="desktop-image"
-          class="main-img__img"
+          class="main__img"
         />
       </section>
-      <section class="main-description">
-        <h1 class="main-description__h1">
+      <section class="main__description">
+        <h1 class="main__title">
           Shift the overall look and feel by adding these wonderful touches to
           furniture in your home
         </h1>
-        <h2 class="main-description__h2">
+        <h2 class="main__subtitle">
           Ever been in a room and felt like something was missing? Perhaps it
           felt slightly bare and uninviting. I’ve got some simple tips to help
           you make any room feel complete.
         </h2>
         <div class="social-card">
-          <figure class="social-card-img">
+          <figure class="social-card__img-container">
             <img
               src="assets/img/avatar-michelle.jpg"
               alt="avatar-michelle"
-              class="social-card-img__img"
+              class="social-card__img"
             />
           </figure>
-          <div class="social-card-info">
-            <h3 class="social-card-info__name">Michelle Appleton</h3>
-            <h4 class="social-card-info__date">28 Jan 2020</h4>
+          <div class="social-card__info">
+            <h3 class="social-card__name">Michelle Appleton</h3>
+            <h4 class="social-card__date">28 Jun 2020</h4>
           </div>
-          <button class="social-card__share-button">
+          <button id="share-button" class="social-card__share-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
               <path
+                class="social-card__share-img"
                 fill="#6E8098"
                 d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
               />
             </svg>
           </button>
+          <div id="social-links" class="social__links">
+            <h5 class="links__share">share</h5>
+            <div class="links__networks">
+              <img
+                src="assets/img/icon-facebook.svg"
+                alt="facebook-icon"
+                class="links__img"
+              />
+              <img
+                src="assets/img/icon-twitter.svg"
+                alt="twitter-icon"
+                class="links__img"
+              />
+              <img
+                src="assets/img/icon-pinterest.svg"
+                alt="pinterest-icon"
+                class="links__img"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -59,7 +87,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">inanocs</a>.
     </div>
   </body>
 </html>
